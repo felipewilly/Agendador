@@ -44,7 +44,7 @@ class SendMail:
         mensagem = EmailMessage()
         mensagem['Subject'] = "Teste Sistema Agenda Felipe"
         mensagem['From'] = SMTP_LONGIN
-        mensagem['To'] = "ti@oncoradium.com.br"
+        mensagem['To'] = "yourMail@youmail.com"
         mensagem.set_content(f'teste de função felipe data:')
         server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
         try:
